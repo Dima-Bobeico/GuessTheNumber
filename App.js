@@ -14,12 +14,12 @@ export default function App() {
 
   const checkRandomNumber = (text) => {
     const randomNumber = getRandomNumber();
-    if (text === randomNumber) {
-      console.log("you guess the number");
-    } else if (text > randomNumber) {
+    if (text > randomNumber) {
       console.log("your number is too high");
-    } else {
+    } else if (text < randomNumber) {
       console.log("your number is too low");
+    } else {
+      console.log("you guess the number");
     }
   };
 
