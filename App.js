@@ -35,7 +35,7 @@ export default function App() {
       <Button
         title="check"
         style={styles.ButtonStyle}
-        onPress={() => getRandomNumber()}
+        onPress={() => getRandomNumber() && checkRandomNumber()}
       />
     </View>
   );
