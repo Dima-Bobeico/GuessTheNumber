@@ -12,7 +12,7 @@ export default function App() {
 
   const [text, onChangeText] = React.useState("Useless Text");
   const [inputNumber, onChangeNumber] = React.useState(null);
-  console.log(onChangeNumber);
+
   return (
     <View style={styles.container}>
       <Text>{number}</Text>
@@ -23,7 +23,6 @@ export default function App() {
         onChangeText={onChangeNumber}
         keyboardType="numeric"
       />
-
       <Button
         title="check"
         style={styles.ButtonStyle}
@@ -45,6 +44,7 @@ const styles = StyleSheet.create({
     borderColor: "#E4DCCF",
     borderWidth: 3,
     borderRadius: 10,
+    margin: 20,
     width: "80%",
   },
   ButtonStyle: {
