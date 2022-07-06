@@ -14,9 +14,9 @@ export default function App() {
 
   const checkRandomNumber = (text) => {
     const randomNumber = getRandomNumber();
-    if (text > randomNumber) {
+    if (Number(text) > randomNumber) {
       console.log("your number is too high");
-    } else if (text < randomNumber) {
+    } else if (Number(text) < randomNumber) {
       console.log("your number is too low");
     } else {
       console.log("you guess the number");
