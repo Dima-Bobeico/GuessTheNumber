@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, TextInput, Button } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Type:</Text>
+      <Text>Write a number between 0-10 </Text>
       <TextInput style={styles.TextInputStyle} placeholder={"Number:"} />
       <Button title="check" style={styles.ButtonStyle} />
       <Button />
