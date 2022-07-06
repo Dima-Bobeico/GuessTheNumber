@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
   },
   TextInputStyle: {
     backgroundColor: "#F0EBE3",
-    padding: 10,
     borderColor: "#E4DCCF",
     borderWidth: 3,
     borderRadius: 10,
