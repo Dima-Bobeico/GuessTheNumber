@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Type:</Text>
-      <TextInput />
+      <TextInput style={styles.TextInputStyle} placeholder={"Number:"}/>
     </View>
   );
 }
@@ -17,4 +17,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  TextInputStyle: {
+    borderColor: "#000",
+    padding: 30,
+  }
 });
