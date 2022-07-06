@@ -1,1 +1,3 @@
 # GuessTheNumber
+
+requirements
