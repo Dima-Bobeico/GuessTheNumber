@@ -18,8 +18,11 @@ export default function App() {
       console.log("your number is too high");
     } else if (Number(text) < randomNumber) {
       console.log("your number is too low");
-    } else {
+    } else if (Number(text) === randomNumber) {
       console.log("you guess the number");
+    }
+    else {
+      console.log('error');
     }
   };
 
