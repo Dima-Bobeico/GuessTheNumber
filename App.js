@@ -21,7 +21,6 @@ export default function App() {
         style={styles.TextInputStyle}
         placeholder={"Number:"}
         onChangeText={onChangeNumber}
-        value={number}
         keyboardType="numeric"
       />
       <Button
