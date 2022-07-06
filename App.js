@@ -15,9 +15,9 @@ export default function App() {
   const [text, setText] = React.useState("");
 
   const checkRandomNumber = (text, number) => {
-    if (Number(text) === number) {
+    if (Number(text) === randomNumber) {
       console.log("you guess the number");
-    } else if (Number(text) > number) {
+    } else if (Number(text) > randomNumber) {
       console.log("your number is too high");
     } else {
       console.log("your number is too low");
@@ -37,7 +37,7 @@ export default function App() {
       <Button
         title="check"
         style={styles.ButtonStyle}
-        onPress={() => randomNumber && checkRandomNumber()}
+        onPress={() => checkRandomNumber()}
       />
     </View>
   );
