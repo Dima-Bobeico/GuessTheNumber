@@ -12,7 +12,7 @@ export default function App() {
 
   const [text, onChangeText] = React.useState("Useless Text");
   const [inputNumber, onChangeNumber] = React.useState(null);
-
+  console.log(onChangeNumber);
   return (
     <View style={styles.container}>
       <Text>{number}</Text>
@@ -23,6 +23,7 @@ export default function App() {
         onChangeText={onChangeNumber}
         keyboardType="numeric"
       />
+
       <Button
         title="check"
         style={styles.ButtonStyle}
