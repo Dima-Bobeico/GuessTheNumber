@@ -5,7 +5,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Type:</Text>
-      <TextInput style={styles.TextInputStyle} placeholder={"Number:"}/>
+      <TextInput style={styles.TextInputStyle} placeholder={"Number:"} />
+      <Button title="check" style={styles.ButtonStyle} />
     </View>
   );
 }
@@ -20,5 +21,8 @@ const styles = StyleSheet.create({
   TextInputStyle: {
     borderColor: "#000",
     padding: 30,
-  }
+  },
+  ButtonStyle: {
+    color: "blue",
+  },
 });
