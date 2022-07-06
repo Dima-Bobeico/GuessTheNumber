@@ -4,11 +4,8 @@ import { StyleSheet, Text, View, TextInput, Button } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
-      <TextInput
-        value={number}
-        placeholder="useless placeholder"
-        keyboardType="numeric"
-      />
+      <Text>Type:</Text>
+      <TextInput />
     </View>
   );
 }
