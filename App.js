@@ -25,7 +25,6 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>{number}</Text>
       <Text>Write a number between 0-10 </Text>
       <TextInput
         style={styles.TextInputStyle}
