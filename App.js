@@ -15,9 +15,9 @@ export default function App() {
   const [text, setText] = React.useState("");
 
   const checkRandomNumber = (text, number) => {
-    if (Number(text) === randomNumber) {
+    if (text === randomNumber) {
       console.log("you guess the number");
-    } else if (Number(text) > randomNumber) {
+    } else if (text > randomNumber) {
       console.log("your number is too high");
     } else {
       console.log("your number is too low");
