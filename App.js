@@ -7,7 +7,6 @@ export default function App() {
       <Text>Write a number between 0-10 </Text>
       <TextInput style={styles.TextInputStyle} placeholder={"Number:"} />
       <Button title="check" style={styles.ButtonStyle} />
-      <Button />
     </View>
   );
 }
