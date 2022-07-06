@@ -7,6 +7,7 @@ export default function App() {
       <Text>Type:</Text>
       <TextInput style={styles.TextInputStyle} placeholder={"Number:"} />
       <Button title="check" style={styles.ButtonStyle} />
+      <Button />
     </View>
   );
 }
