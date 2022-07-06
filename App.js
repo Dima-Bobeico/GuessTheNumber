@@ -22,7 +22,6 @@ export default function App() {
         value={text}
         onChangeText={setText}
       />
-      console.log(setText)
       <Button
         title="check"
         style={styles.ButtonStyle}
