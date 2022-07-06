@@ -10,11 +10,10 @@ export default function App() {
     setNumber(randomNumber);
   };
 
-  const randomNumber = getRandomNumber();
-
   const [text, setText] = React.useState("");
 
-  const checkRandomNumber = (text, number) => {
+  const checkRandomNumber = (text) => {
+    const randomNumber = getRandomNumber();
     if (text === randomNumber) {
       console.log("you guess the number");
     } else if (text > randomNumber) {
