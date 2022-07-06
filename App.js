@@ -10,8 +10,7 @@ export default function App() {
     setNumber(randomNumber);
   };
 
-  const [text, onChangeText] = React.useState("Useless Text");
-  const [inputNumber, onChangeNumber] = React.useState(null);
+  const [text, setText] = React.useState("");
 
   return (
     <View style={styles.container}>
@@ -20,9 +19,10 @@ export default function App() {
       <TextInput
         style={styles.TextInputStyle}
         placeholder={"Number:"}
-        onChangeText={onChangeNumber}
-        keyboardType="numeric"
+        value={text}
+        onChangeText={setText}
       />
+      console.log(setText)
       <Button
         title="check"
         style={styles.ButtonStyle}
