@@ -12,6 +12,16 @@ export default function App() {
 
   const [text, setText] = React.useState("");
 
+  const checkRandomNumber = (text, number) => {
+    if (text === number) {
+      console.log("you guess the number");
+    } else if (text > number) {
+      console.log("your number is too high");
+    } else {
+      console.log("your number is too low");
+    }
+  };
+
   return (
     <View style={styles.container}>
       <Text>{number}</Text>
